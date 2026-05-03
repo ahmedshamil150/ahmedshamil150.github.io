@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MemberFit</title>
+  <style>
+    :root {
+      --primary: #00C97A;
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --border: #1e1e1e;
+      --text: #f0f0f0;
+      --text-sec: #888;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .logo-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(0, 201, 122, 0.12);
+      border: 1px solid rgba(0, 201, 122, 0.3);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: var(--primary);
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: var(--text-sec);
+      font-size: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(0, 201, 122, 0.1);
+      border: 1px solid rgba(0, 201, 122, 0.3);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-top: 16px;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Section ── */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 201, 122, 0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
+
+    .section p {
+      color: var(--text-sec);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      color: var(--text-sec);
+      font-size: 15px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      color: var(--primary);
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: rgba(0, 201, 122, 0.06);
+      border: 1px solid rgba(0, 201, 122, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .highlight p {
+      color: rgba(240, 240, 240, 0.85) !important;
+      margin: 0;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(0,201,122,0.08) 0%, rgba(0,201,122,0.03) 100%);
+      border: 1px solid rgba(0, 201, 122, 0.25);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .contact-card h2 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: var(--text-sec);
+      margin-bottom: 20px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: var(--primary);
+      color: #000;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { opacity: 0.9; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-sec);
+      font-size: 13px;
+    }
+
+    footer span { color: var(--primary); }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .section { padding: 24px 20px; }
+      header { padding: 36px 20px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">💪</div>
+      <div class="logo-text">MEMBERFIT</div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>How we collect, use, and protect your information</p>
+    <div class="badge">LAST UPDATED: MAY 2026</div>
+  </header>
+
+  <main>
+
+    <!-- Introduction -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>INTRODUCTION</h2>
+      </div>
+      <p>
+        MemberFit ("we", "our", or "us") operates the MemberFit mobile application. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our app.
+      </p>
+      <p>
+        By using the app, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the app.
+      </p>
+    </div>
+
+    <!-- Information We Collect -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📊</div>
+        <h2>INFORMATION WE COLLECT</h2>
+      </div>
+      <p>We collect the following types of information:</p>
+      <ul>
+        <li><strong>Account Information</strong> — Name, email address, username, and phone number provided during registration.</li>
+        <li><strong>Fitness Profile</strong> — Age, weight, height, gender, body type, fitness goals, experience level, workout location, and workout schedule.</li>
+        <li><strong>Diet Preferences</strong> — Diet type, supplement preferences, budget preference, and preferred workout time.</li>
+        <li><strong>Progress Data</strong> — Monthly check-in snapshots including weight, body type, and personal records (bench press, squat, deadlift).</li>
+        <li><strong>Workout Progress</strong> — Exercise completion data stored locally and synced to our servers.</li>
+        <li><strong>Payment Information</strong> — Payment proof screenshots uploaded for membership verification. We do not store card or bank details.</li>
+        <li><strong>Usage Data</strong> — App interactions, feature usage, and error logs for improving the service.</li>
+      </ul>
+    </div>
+
+    <!-- How We Use Your Information -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚙️</div>
+        <h2>HOW WE USE YOUR INFORMATION</h2>
+      </div>
+      <ul>
+        <li>To create and manage your gym membership account.</li>
+        <li>To generate personalised AI workout and diet plans based on your profile.</li>
+        <li>To allow gym admins to manage memberships and assign trainers.</li>
+        <li>To allow trainers to create custom workout and diet plans for assigned members.</li>
+        <li>To process membership payments and verify proof of payment.</li>
+        <li>To track your fitness progress over time.</li>
+        <li>To send membership expiry notifications.</li>
+        <li>To improve the app's features and performance.</li>
+      </ul>
+    </div>
+
+    <!-- AI Features -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🤖</div>
+        <h2>AI-POWERED FEATURES</h2>
+      </div>
+      <p>
+        MemberFit uses third-party AI services (Groq and Google Gemini) to generate personalised workout and diet plans. When you request a plan, your fitness profile data (age, weight, height, goals, preferences) is sent to these services.
+      </p>
+      <div class="highlight">
+        <p>
+          <strong>Important:</strong> Your name, email, and contact information are never sent to AI services. Only anonymised fitness data is used for plan generation.
+        </p>
+      </div>
+      <p style="margin-top: 16px;">
+        These services are governed by their own privacy policies:
+      </p>
+      <ul>
+        <li>Groq — <a href="https://groq.com/privacy-policy" style="color: var(--primary);">groq.com/privacy-policy</a></li>
+        <li>Google Gemini — <a href="https://policies.google.com/privacy" style="color: var(--primary);">policies.google.com/privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- Data Storage -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🗄️</div>
+        <h2>DATA STORAGE & SECURITY</h2>
+      </div>
+      <p>
+        Your data is stored securely on Supabase, a cloud database platform with enterprise-grade security. All data is encrypted in transit (HTTPS/TLS) and at rest.
+      </p>
+      <ul>
+        <li>Authentication is handled by Supabase Auth with secure JWT tokens.</li>
+        <li>Row-Level Security (RLS) ensures users can only access their own data.</li>
+        <li>Payment proof images are stored in a private, access-controlled storage bucket.</li>
+        <li>Trainer photos are stored in a public storage bucket (only the photo URL is public, not personal data).</li>
+        <li>Workout progress data is also cached locally on your device.</li>
+      </ul>
+    </div>
+
+    <!-- Data Sharing -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🤝</div>
+        <h2>DATA SHARING</h2>
+      </div>
+      <p>We do not sell your personal data. We share data only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Gym Admin</strong> — Your name, email, phone number, membership status, and payment proofs are visible to the admin of your registered gym.</li>
+        <li><strong>Your Trainer</strong> — If assigned a trainer, they can see your name, membership status, and fitness profile to create personalised plans.</li>
+        <li><strong>AI Services</strong> — Anonymised fitness data is sent to Groq and Google Gemini for plan generation (see AI Features section).</li>
+        <li><strong>Legal Requirements</strong> — We may disclose data if required by law or to protect our rights.</li>
+      </ul>
+    </div>
+
+    <!-- Your Rights -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <h2>YOUR RIGHTS</h2>
+      </div>
+      <p>You have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access</strong> — You can view all your profile and fitness data within the app.</li>
+        <li><strong>Correction</strong> — You can update your profile information at any time through the app settings.</li>
+        <li><strong>Deletion</strong> — You can request deletion of your account and all associated data by contacting your gym admin or emailing us.</li>
+        <li><strong>Portability</strong> — You can request a copy of your data in a readable format.</li>
+        <li><strong>Opt-out</strong> — You can disable push notifications through your device settings at any time.</li>
+      </ul>
+    </div>
+
+    <!-- Children -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">👶</div>
+        <h2>CHILDREN'S PRIVACY</h2>
+      </div>
+      <p>
+        MemberFit is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.
+      </p>
+    </div>
+
+    <!-- Changes -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔄</div>
+        <h2>CHANGES TO THIS POLICY</h2>
+      </div>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last Updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-card">
+      <h2>QUESTIONS OR CONCERNS?</h2>
+      <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us.</p>
+      <a href="mailto:privacy@memberfit.app">CONTACT US</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 <span>MemberFit</span>. All rights reserved.</p>
+    <p style="margin-top: 8px;">This privacy policy was last updated in May 2026.</p>
+  </footer>
+
+</body>
+</html>
